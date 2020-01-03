@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ljx
- * Date: 2020/1/2
- * Time: 4:38 PM
+
+/*
+ * This file is part of the smauell/weather.
+ *
+ * (c) SmauelL <ljxlm502661058@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace SmauelL\Weather;
@@ -14,7 +17,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(Weather::class, function(){
+        $this->app->singleton(Weather::class, function () {
             return new Weather(config('services.weather.key'));
         });
 
