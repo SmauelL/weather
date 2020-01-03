@@ -33,8 +33,8 @@ class Weather
     }
 
     public function getWeather($city, $type = 'base', $format = 'json')
-    {
-        $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
+    {$url = 'https://restapi.amap.com/v3/weather/weatherInfo';
+
 
         // 1. 对 `$format` 与 `$type` 参数进行检查，不在范围内的抛出异常。
         if (!\in_array($format, ['xml', 'json'])) {
