@@ -17,7 +17,7 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-    public function __construct(string $key)
+    public function __construct($key)
     {
         $this->key = $key;
     }
