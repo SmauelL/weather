@@ -173,7 +173,7 @@ array|string getWeather(string $city, string $format = 'json')
 在 Laravel 中使用也是同样的安装方式，配置写在 `config/services.php` 中：
 
 ```
-	.
+    .
     .
     .
      'weather' => [
@@ -192,7 +192,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 # 方法参数注入
 
 ```
-	.
+    .
     .
     .
     public function edit(Weather $weather) 
@@ -207,7 +207,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 # 服务名访问
 
 ```
-	.
+    .
     .
     .
     public function edit() 
